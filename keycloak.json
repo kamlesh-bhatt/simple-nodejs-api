@@ -1,0 +1,9 @@
+{
+  "realm": "kb",
+  "auth-server-url": "http://locahost:8080/auth",
+  "ssl-required": "external",
+  "resource": "account",
+  "credentials": {
+    "secret": "my-cool-secret"
+  }
+}
