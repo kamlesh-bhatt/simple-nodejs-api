@@ -15,8 +15,8 @@ RUN apt-get update -y && apt-get install -y \
 	make \
 	gnupg
 
-COPY ./dockerfiles/nginx.conf /etc/nginx/sites-enabled/default
-COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./docker/nginx.conf /etc/nginx/sites-enabled/default
+COPY ./docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # routing nginx logs to docker-logs
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
